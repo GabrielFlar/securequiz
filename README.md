@@ -106,15 +106,15 @@ git push -u origin main
 ## 👨‍💻 Créditos
 
 **Desarrollado por**: Gabriel Flores  
-**Universidad**: Universidad Internacional de La Rioja (UNIR)  
-**Profesor**: Guillermo Mendoza  
+**Universidad**: Universidad Tecnológica De San Juan del Río (UTSJR)  
+**Profesor Guía**: Guillermo Mendoza  
 **Portafolio**: [gabrielflar.github.io/GabrielFlar.com](https://gabrielflar.github.io/GabrielFlar.com/)
 
 ## 📄 Licencia y Atribuciones
 
 - **Material de Estudio**: © Universidad Internacional de La Rioja (UNIR)
 - Los materiales académicos se utilizan con fines educativos
-- **Código de la Aplicación**: Desarrollado por Gabriel Flores
+- **Código de la Aplicación**: Desarrollado por Gabriel Flores (UTSJR)
 
 ## 🤝 Contribuciones
 

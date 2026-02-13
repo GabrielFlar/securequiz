@@ -61,7 +61,8 @@ ${performance}
 🎯 *Total de preguntas:* ${total}
 
 📱 *Plataforma:* SecureQuiz
-🌐 *Proyecto de:* Gabriel Flores - UNIR
+🌐 *Proyecto de:* Gabriel Flores - UTSJR
+📚 *Material:* © UNIR
 
 _Certificado generado automáticamente._
     `.trim();
