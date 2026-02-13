@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma interactiva de estudio y trivia de Seguridad de Software">
+    <title>Quiz de Seguridad de Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🔐</span>
+                <span class="brand-text">SecureQuiz</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-section="home">Inicio</a>
+                <a href="#study" class="nav-link" data-section="study">Estudiar</a>
+                <a href="#quiz" class="nav-link" data-section="quiz">Quiz</a>
+                <a href="https://gabrielflar.github.io/GabrielFlar.com/" target="_blank" class="nav-link portfolio-link">
+                    <span>Mi Portafolio</span>
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Domina la</span>
+                    <span class="title-highlight">Seguridad de Software</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Plataforma interactiva para estudiar y evaluar tus conocimientos sobre seguridad en el desarrollo de software
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-navigate="quiz">
+                        <span>Iniciar Quiz</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-secondary" data-navigate="study">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                        <span>Material de Estudio</span>
+                    </button>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">100</div>
+                        <div class="stat-label">Preguntas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">2</div>
+                        <div class="stat-label">Temas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">∞</div>
+                        <div class="stat-label">Prácticas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Section -->
+    <section id="study" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Material de Estudio</h2>
+                <p class="section-subtitle">Documentos académicos para reforzar tus conocimientos</p>
+            </div>
+            
+            <div class="study-materials">
+                <div class="material-card">
+                    <div class="material-icon">📄</div>
+                    <div class="material-content">
+                        <h3 class="material-title">TEMA 1: El problema de la seguridad en el software</h3>
+                        <p class="material-description">
+                            Introducción a conceptos básicos, vulnerabilidades (CVE y CWE), propiedades del software seguro, 
+                            principios de diseño, amenazas y ciclos de vida S-SDLC.
+                        </p>
+                        <div class="material-topics">
+                            <span class="topic-tag">Vulnerabilidades</span>
+                            <span class="topic-tag">CVE/CWE</span>
+                            <span class="topic-tag">S-SDLC</span>
+                        </div>
+                        <a href="elementos_estudio/TEMA 1 (1).pdf" target="_blank" class="material-link">
+                            <span>Abrir PDF</span>
+                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon">📄</div>
+                    <div class="material-content">
+                        <h3 class="material-title">TEMA 2: Seguridad en el ciclo de vida del software</h3>
+                        <p class="material-description">
+                            Modelado de ataques, casos de abuso, requisitos de seguridad, análisis de riesgo arquitectónico, 
+                            pruebas de seguridad, revisión de código y test de penetración.
+                        </p>
+                        <div class="material-topics">
+                            <span class="topic-tag">Modelado de Ataques</span>
+                            <span class="topic-tag">Análisis Estático</span>
+                            <span class="topic-tag">Pentesting</span>
+                        </div>
+                        <a href="elementos_estudio/tema 2 uts.pdf" target="_blank" class="material-link">
+                            <span>Abrir PDF</span>
+                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-notice">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M15 9a6 6 0 0 0-6 0"/>
+                </svg>
+                <p>
+                    Todo el material de estudio es propiedad de <strong>Universidad Internacional de La Rioja (UNIR)</strong>.
+                    Los documentos se utilizan con fines educativos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+        <div class="container">
+            <!-- Quiz Setup Screen -->
+            <div id="quiz-setup" class="quiz-screen active">
+                <div class="section-header">
+                    <h2 class="section-title">Configura tu Quiz</h2>
+                    <p class="section-subtitle">Elige cuántas preguntas quieres responder y completa tus datos</p>
+                </div>
+
+                <div class="quiz-form">
+                    <div class="form-group">
+                        <label for="userName" class="form-label">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span>Nombre Completo</span>
+                        </label>
+                        <input type="text" id="userName" class="form-input" placeholder="Ej: Juan Pérez García" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userPhone" class="form-label">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>Número de Teléfono</span>
+                        </label>
+                        <input type="tel" id="userPhone" class="form-input" placeholder="Ej: 8123456789" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questionCount" class="form-label">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                            <span>Número de Preguntas</span>
+                        </label>
+                        <select id="questionCount" class="form-select">
+                            <option value="10">10 preguntas</option>
+                            <option value="20">20 preguntas</option>
+                            <option value="30">30 preguntas</option>
+                            <option value="40">40 preguntas</option>
+                            <option value="50">50 preguntas</option>
+                            <option value="100">100 preguntas (Todas)</option>
+                        </select>
+                    </div>
+
+                    <button id="startQuizBtn" class="btn btn-primary btn-large">
+                        <span>Comenzar Quiz</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Questions Screen -->
+            <div id="quiz-questions" class="quiz-screen">
+                <div class="quiz-header">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressBar"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+                        </div>
+                    </div>
+                    <div class="quiz-topic" id="questionTopic">Tema 1</div>
+                </div>
+
+                <div class="question-card">
+                    <h3 class="question-text" id="questionText">Pregunta de ejemplo...</h3>
+                    <div class="question-options" id="questionOptions">
+                        <!-- Options will be inserted here by JavaScript -->
+                    </div>
+                    <button id="nextQuestionBtn" class="btn btn-primary" disabled>
+                        <span>Siguiente</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Results Screen -->
+            <div id="quiz-results" class="quiz-screen">
+                <div class="results-container">
+                    <div class="results-header">
+                        <div class="results-icon">🎉</div>
+                        <h2 class="results-title">¡Quiz Completado!</h2>
+                        <p class="results-subtitle" id="resultsName">Nombre del Usuario</p>
+                    </div>
+
+                    <div class="results-score">
+                        <div class="score-circle">
+                            <svg width="200" height="200" viewBox="0 0 200 200">
+                                <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12"/>
+                                <circle id="scoreCircle" cx="100" cy="100" r="90" fill="none" stroke="url(#gradient)" stroke-width="12" stroke-linecap="round" transform="rotate(-90 100 100)"/>
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="score-text">
+                                <div class="score-percentage" id="scorePercentage">0%</div>
+                                <div class="score-fraction" id="scoreFraction">0/10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-breakdown">
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Correctas</div>
+                            <div class="breakdown-value correct" id="correctCount">0</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Incorrectas</div>
+                            <div class="breakdown-value incorrect" id="incorrectCount">0</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Porcentaje</div>
+                            <div class="breakdown-value" id="percentageValue">0%</div>
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button id="shareWhatsAppBtn" class="btn btn-primary btn-large">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>Enviar Resultados por WhatsApp</span>
+                        </button>
+                        <button id="retakeQuizBtn" class="btn btn-secondary">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <polyline points="1 4 1 10 7 10"/>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                            </svg>
+                            <span>Realizar Otro Quiz</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4 class="footer-title">Desarrollado por</h4>
+                <p class="footer-name">Gabriel Flores</p>
+                <p class="footer-university">Universidad Internacional de La Rioja (UNIR)</p>
+                <p class="footer-professor">Con la guía del Prof. Guillermo Mendoza</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://gabrielflar.github.io/GabrielFlar.com/" target="_blank" class="footer-link">
+                    <span>Ver Mi Portafolio</span>
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gabriel Flores. Material académico © UNIR.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="questions-data.js"></script>
+    <script src="quiz.js"></script>
+    <script src="whatsapp.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
