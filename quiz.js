@@ -247,20 +247,17 @@ class QuizManager {
         // Show results screen
         this.showScreen('quiz-results');
 
-        // Setup WhatsApp share button
-        const shareBtn = document.getElementById('shareWhatsAppBtn');
-        if (shareBtn) {
-            shareBtn.onclick = () => {
-                sendResultsViaWhatsApp({
-                    name: this.userName,
-                    phone: this.userPhone,
-                    score: this.score,
-                    total: this.questionCount,
-                    percentage: percentage,
-                    answers: this.userAnswers
-                });
-            };
-        }
+        // Auto-generate and download certificate after a short delay
+        setTimeout(() => {
+            generateCertificate({
+                name: this.userName,
+                phone: this.userPhone,
+                score: this.score,
+                total: this.questionCount,
+                percentage: percentage,
+                answers: this.userAnswers
+            });
+        }, 500);
     }
 
     resetQuiz() {
