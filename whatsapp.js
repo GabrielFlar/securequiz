@@ -154,11 +154,15 @@ function generateCertificate(results) {
     // Footer
     ctx.font = 'bold 22px Inter, sans-serif';
     ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
-    ctx.fillText('SecureQuiz - Gabriel Flores', canvas.width / 2, 730);
+    ctx.fillText('SecureQuiz - Gabriel Flores (UTSJR)', canvas.width / 2, 720);
 
     ctx.font = '18px Inter, sans-serif';
     ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
-    ctx.fillText('Universidad Internacional de La Rioja (UNIR)', canvas.width / 2, 760);
+    ctx.fillText('Universidad Tecnológica De San Juan del Río', canvas.width / 2, 750);
+
+    ctx.font = '16px Inter, sans-serif';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+    ctx.fillText('Material © Universidad Internacional de La Rioja (UNIR)', canvas.width / 2, 775);
 
     // Convert to downloadable image
     try {
